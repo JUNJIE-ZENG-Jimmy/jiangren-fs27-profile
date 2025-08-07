@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding:1rem; /* rem是参考root(相对根元素)的font size */
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none; /* 去掉下划线 */
+    font-weight: bold;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+    outline-offset: 2px; /* 鼠标悬停或聚焦时的轮廓偏移 */
+    outline-color: blue;
+    outline-style: solid;
+}
+
+.hero {
+    background-color: #e2e2e2;
+    padding: 2rem 1rem; /* 上下2rem，左右1rem */
+    margin-top: 1rem; /* 上下1rem的外边距 */
+    text-align: center;
+    border-radius: 8px; /* 圆角 */
+}
+
+.product-grid {
+    display: flex;
+}

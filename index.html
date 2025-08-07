@@ -23,9 +23,9 @@
         <h1>Tech Gear</h1>
         <nav aria-label="Main navigation">
             <ul class="nav-list">
-                <li><a href="">Products</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -34,7 +34,7 @@
             <h2>Innovative Tech Gadgets</h2>
             <p>Explore our latest range of tech gear designed for performance and style.</p>
         </section>
-        <section class="products" aria-label="Product List">
+        <section id="products" class="products" aria-label="Product List">
             <h2>Our Products</h2>
             <div class="product-grid">
                 <article class="card">
@@ -57,7 +57,35 @@
                 </article>
             </div>
         </section>
+        <section id="about" class="about" aria-label="About Tech Gear">
+            <h2>About Us</h2>
+            <p>We are passionate about technology and committed to providing the best gadgets to enhance your lifestyle.</p>
+        </section>
+        <section id="contact" class="contact" aria-label="Contact heading">
+            <h2>Get in Touch</h2>
+            <p>Have a question or want to work together? Send us a message below and we'll get back to you!</p>
+            <form class="contact-form" aria-label="Contact Form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="male">Male</label>
+                <input type="radio" value="male" name="gender" id="male">
+                <label for="female">Female</label>
+                <input type="radio" value="female" name="gender" id="female">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </section>
     </main>
+    <footer>
+        <p>&copy; 2025 Tech Gear. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
